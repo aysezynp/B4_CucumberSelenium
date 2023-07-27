@@ -22,4 +22,6 @@ public class UserProfilePage extends BasePage {
     public String updateMessageGetText(){
         return updateMessage.getText();
     }
+
+
 }

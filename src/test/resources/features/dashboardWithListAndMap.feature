@@ -1,3 +1,4 @@
+@regression
 Feature: Dashboard Menu Checks
 Background:
   Given The user is on the login page
@@ -22,6 +23,7 @@ Background:
    |username|jennifer@gmail.com|
    |password|Jenni1234         |
    |name|jennifer              |
+
    Then The user should be able to login
    And The user should be able to see following menu
     |Dashboard|
@@ -50,4 +52,24 @@ Background:
        |Add Education|
        |Change Password|
 
+  @c_datatable_S_outline
+  Scenario Outline: Example 2- for "<name>" with Scenario Outline
+    When The user logs in using following menu
+      | username | <userEmail> |
+      | password | <password>  |
+      | name     | <name>      |
+    Then The user should be able to login
+    And The user should be able to see following menu
+      |Dashboard|
+      |Developers|
+      |Components|
+      |Forms|
+      |JavaScript|
+      |<name>|
+
+    Examples:
+      | userEmail      | password | name |
+      | mike@gmail.com | mike1234 | mike |
+      | john@gmail.com | John1234. | John |
+      | eddiem@kraft.com | eddiem12 | Eddie Murphy |
 

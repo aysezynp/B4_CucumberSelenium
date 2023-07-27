@@ -18,7 +18,7 @@ Feature: Kraftech Login Test
     When The user enters student credentials
     Then The user should be able to login
 
-  @developer @login
+  @developer @login @smoke @dataBase
   Scenario: Login as a developer
    # Given The user is on the login page
     When The user enters developer credentials

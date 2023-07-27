@@ -1,7 +1,7 @@
 @regression
-Feature: Navigation Menu Test
-
-  @mike
+@navigation
+Feature: Navigation Menu Tests
+ @mike
   Scenario: Navigation to developers menu
     Given The user is on the login page
     When Login as Mike
@@ -9,7 +9,7 @@ Feature: Navigation Menu Test
     When Go to developers menu
     Then Validate that Developers text is visible
 
-  @Sebastian @smoke
+  @sebastian @smoke
   Scenario: Navigation to Forms/Input menu
     Given The user is on the login page
     When Login as Sebastian
@@ -17,7 +17,7 @@ Feature: Navigation Menu Test
     When Go to forms-input menu
     And Validate that General Form Elements - Input text is visible
 
-  @John
+  @john
   Scenario: Navigation to My Profile  menu
     Given The user is on the login page
     When Login as John
