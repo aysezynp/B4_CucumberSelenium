@@ -1,4 +1,4 @@
-@regression
+@regression @parallel
 Feature: Dashboard Menu Checks
 Background:
   Given The user is on the login page

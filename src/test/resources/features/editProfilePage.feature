@@ -1,4 +1,4 @@
-@regression
+@regression @parallel
 Feature: Edit profile page
 
   @editprofile
