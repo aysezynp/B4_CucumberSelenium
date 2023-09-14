@@ -5,14 +5,10 @@ import com.kraftech.pages.LoginPage;
 import com.kraftech.utilities.BrowserUtils;
 import com.kraftech.utilities.ConfigurationReader;
 import com.kraftech.utilities.Driver;
-import com.kraftech.utilities.ExcelUtil;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-
-import java.util.List;
-import java.util.Map;
 
 public class Login_StepDefs {
     LoginPage loginPage = new LoginPage();

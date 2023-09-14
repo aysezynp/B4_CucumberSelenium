@@ -14,7 +14,7 @@ import java.util.Map;
 
 public abstract class BasePage {
 
-    //bütün pagelerde ortak oalan webELementler için
+    //bütün pagelerde ortak olan webELementler için
 
     public BasePage(){
         PageFactory.initElements(Driver.get(),this);
